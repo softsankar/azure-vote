@@ -1,4 +1,6 @@
 name: Azure Pipelines
+trigger:
+  batch: true
 stages:
 - stage: Build
   jobs:
