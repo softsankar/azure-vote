@@ -45,6 +45,6 @@ stages:
                 if [ ! -d "$DIR" ]; then
                     mkdir app
                 fi
-                mv /home/udacityadmin/azagent/_work/1/drop-azurevote/$(Build.BuildId)-azurevote.zip app
+                mv /home/udacityadmin/azagent1/_work/1/drop-azurevote/$(Build.BuildId)-azurevote.zip app
                 cd app
                 unzip -o $(Build.BuildId)-azurevote.zip
