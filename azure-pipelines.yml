@@ -2,7 +2,7 @@ name: Azure Pipelines
 stages:
 - stage: Build
   jobs:
-  - job: Build
+  - job: BuildAppZip
     pool:
       name: Hosted Ubuntu 1604
     steps:
