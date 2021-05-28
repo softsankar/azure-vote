@@ -1,13 +1,10 @@
 name: Azure Pipelines
-trigger:
-  batch: true
 stages:
 - stage: Build
   jobs:
   - job: Build
     pool:
       name: Hosted Ubuntu 1604
-      demands: Limit -equals DisAbleParallel
     steps:
     - task: ArchiveFiles@2
       displayName: 'Archive Azure Vote'
