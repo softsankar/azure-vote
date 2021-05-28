@@ -7,6 +7,7 @@ stages:
   - job: Build
     pool:
       name: Hosted Ubuntu 1604
+      demands: Limit -equals DisAbleParallel
     steps:
     - task: ArchiveFiles@2
       displayName: 'Archive Azure Vote'
